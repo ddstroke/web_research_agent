@@ -1,6 +1,6 @@
 
 from flask import Flask, request, jsonify
-from run4 import main  # this is now possible since main() is defined
+from run import main  # this is now possible since main() is defined
 
 app = Flask(__name__)
 
