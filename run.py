@@ -19,7 +19,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 # --- API Configuration ---
 # IMPORTANT: DO NOT HARDCODE API KEYS IN PRODUCTION CODE.
 # Use environment variables or a secure configuration management system.
-GEMINI_API_KEY = "AIzaSyApaOx0102nb1qqOnFLRPpccOo-GLSeWq0" # Recommended way
+GEMINI_API_KEY = "" # Recommended way
 # If GEMINI_API_KEY environment variable is not set, uncomment the line below
 # and replace "YOUR_DEFAULT_GEMINI_KEY_HERE" with your actual key (for testing only).
 # if not GEMINI_API_KEY:
@@ -28,7 +28,7 @@ GEMINI_API_KEY = "AIzaSyApaOx0102nb1qqOnFLRPpccOo-GLSeWq0" # Recommended way
 if not GEMINI_API_KEY:
     raise ValueError("GEMINI_API_KEY environment variable not set or hardcoded default missing.")
 
-SERPAPI_API_KEY = "0f5b3f37c0bd18e06e53284995572cafcb2fef4455581a257047ebf25b958245" # Your provided key
+SERPAPI_API_KEY = "" # Your provided key
 
 
 genai.configure(api_key=GEMINI_API_KEY)
